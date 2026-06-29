@@ -270,9 +270,9 @@ smallArchDepth = 157
 
 # ============================================================
 # TERM VARIANT
-# Identical to IoskeleyMono except spacing = "term", which
-# fixes arrow and box-drawing rendering in terminals (kitty,
-# Ghostty, etc.) that don't honour the normal cell width.
+# Identical to IoskeleyMono except for terminal-safe spacing and
+# exported glyph names. Kitty needs exported glyph names for
+# programming ligatures to render correctly.
 # ============================================================
 
 [buildPlans.IoskeleyMonoTerm]
@@ -280,7 +280,7 @@ family = "Ioskeley Mono Term"
 spacing = "term"
 serifs = "sans"
 noCvSs = true
-exportGlyphNames = false
+exportGlyphNames = true
 
 weights.inherits = "buildPlans.IoskeleyMono"
 widths.inherits  = "buildPlans.IoskeleyMono"
