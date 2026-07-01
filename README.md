@@ -77,7 +77,7 @@ Install all fonts in your chosen folder — your OS will expose the full weight 
 
 ### About the Term variant
 
-`Ioskeley Mono Term` uses `spacing = "term"`, which constrains every glyph to its cell boundary. Use it if arrows (`→ ← ↑ ↓`), box-drawing characters, or ligatures render incorrectly in your terminal (known affected: kitty, Ghostty). The glyph design is identical to the standard variant — it's purely a spacing change.
+`Ioskeley Mono Term` uses terminal-safe spacing and exports glyph names for terminals such as kitty that require them for programming ligatures. Use it if arrows (`→ ← ↑ ↓`), box-drawing characters, or ligatures render incorrectly in your terminal (known affected: kitty, Ghostty). The glyph design and metrics are identical to the standard variant.
 
 ### About the NL variant
 
